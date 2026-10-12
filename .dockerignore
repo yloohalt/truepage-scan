@@ -1,7 +1,9 @@
-.git
-.venv
-__pycache__
-.pytest_cache
-.env
-tests
-dist
+__pycache__/
+.pytest_cache/
+*.pyc
+.git/
+tests/
+plugin-template/
+tools/
+README.md
+*.zip

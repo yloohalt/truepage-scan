@@ -2,8 +2,11 @@ services:
   - type: web
     name: truepage-scan
     runtime: docker
-    plan: free
-    healthCheckPath: /healthz
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
     envVars:
-      - key: TRUEPAGE_API_KEY
+      - key: SCAN_ACCESS_KEY
         generateValue: true
+      - key: PUBLIC_BASE_URL
+        sync: false  # Set to your actual https://your-service.onrender.com URL
