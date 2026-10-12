@@ -1,0 +1,6 @@
+mcp==1.30.0
+opencv-python-headless==4.14.0.94
+numpy==2.5.4
+Pillow==12.3.0
+starlette==0.52.1
+uvicorn==0.54.0

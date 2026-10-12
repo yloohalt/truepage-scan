@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: truepage-scan
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: TRUEPAGE_API_KEY
+        generateValue: true

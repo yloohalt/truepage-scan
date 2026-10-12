@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "truepage-scan",
+  "version": "0.1.0",
+  "description": "Review and rectify photographed pages using an OpenCV backend, preserving printed content without generation.",
+  "author": {"name": "yloohalt"},
+  "extensions": {"com.openai": {"interface": {
+    "displayName": "TruePage Scan",
+    "shortDescription": "Faithful page scans",
+    "longDescription": "Upload a photograph, review page corners, correct perspective, and export a PNG. For spreads, scan the left page before choosing whether to scan the right.",
+    "developerName": "yloohalt",
+    "category": "Productivity",
+    "defaultPrompt": "Help me scan a photographed textbook page with TruePage Scan."
+  }}}
+}
